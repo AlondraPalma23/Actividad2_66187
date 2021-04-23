@@ -27,19 +27,19 @@ public class Actividad2_66187 {
 //seleciona un numero del 1 al 5 para saber como se escribe en ingles
         switch (numero) {
             case 1:
-                System.out.println("One");
+                System.out.println("En ingles es: One");
                 break;
             case 2:
-                System.out.println("Two");
+                System.out.println("En ingles es: Two");
                 break;
             case 3:
-                System.out.println("Three");
+                System.out.println("En ingles es: Three");
                 break;
             case 4:
-                System.out.println("Four");
+                System.out.println("En ingles es: Four");
                 break;
             case 5:
-                System.out.println("Five");
+                System.out.println("En ingles es: Five");
                 break;
             default:
                 System.out.println("No existe");
@@ -92,7 +92,7 @@ public class Actividad2_66187 {
                 System.out.println("Clase de administración general ");
                 break;
             case 8:
-                System.out.println("Deasayuno");
+                System.out.println("Desayuno");
                 break;
             case 9:case 10:case 11:
                 System.out.println("Clase algebra ");
@@ -132,48 +132,12 @@ public class Actividad2_66187 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingresa un numero ");
         numero = teclado.nextInt();
+        int diaSem = 0;
         
-        if (diasSem (numero)) {
-            System.out.println("Es semana inglesa");
-        }else{
-            System.out.println("Es semana laboral");
-        }
-    
-            
-        
-//        if (numero >= 1 && numero <= 7) {
-//            switch (numero) {
-//                case 1:
-//                    System.out.println("Domingo " );
-//                    break;
-//                case 2:
-//                    System.out.println("Lunes ");
-//                    break;
-//                case 3:
-//                    System.out.println("Martes ");
-//                    break;
-//                case 4:
-//                    System.out.println("Miercoles ");
-//                    break;
-//                case 5:
-//                    System.out.println("Jueves ");
-//                    break;
-//                case 6:
-//                    System.out.println("Viernes ");
-//                    break;
-//                case 7:
-//                    System.out.println("Sabado ");
-//                    break;
-//            }
-//        } else {
-//            System.out.println("INCORRECTO");
-//        }
-    }
-    public static boolean diasSem (int n) {
-        if (n >= 1 && n <= 7) {
-            switch (n) {
+        if (numero >= 1 && numero <= 7) {
+            switch (numero) {
                 case 1:
-                    System.out.println("Domingo ");
+                    System.out.println("Domingo " );
                     break;
                 case 2:
                     System.out.println("Lunes ");
@@ -197,16 +161,13 @@ public class Actividad2_66187 {
         } else {
             System.out.println("INCORRECTO");
         }
-        return false;
-       }
-
-
+    
+    }
     public static void main(String[] args) {
         datos();
-//        ejer1();
-//        ejer2();   
+        ejer1();
+        ejer2();   
         ejer3();
-////      ejer4();
-//        diasSem();
+        ejer4();
     }
 }
