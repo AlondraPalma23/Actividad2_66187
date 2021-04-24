@@ -126,18 +126,15 @@ public class Actividad2_66187 {
         }
     }
 
-    public static void ejer4() {
+    public static void ejer4(int dia, boolean semana_t) {
         System.out.println("-----------[Ejercicio 4]-----------------------");
-        int numero;
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingresa un numero ");
-        numero = teclado.nextInt();
-        int diaSem = 0;
+        System.out.println("Ingresa un dia");
+//        numero = teclado.nextInt();    
         
-        if (numero >= 1 && numero <= 7) {
-            switch (numero) {
+        if (semana_t) {
+            switch (dia) {
                 case 1:
-                    System.out.println("Domingo " );
+                    System.out.println("Domingo" );
                     break;
                 case 2:
                     System.out.println("Lunes ");
@@ -157,9 +154,35 @@ public class Actividad2_66187 {
                 case 7:
                     System.out.println("Sabado ");
                     break;
+                default:
+                System.out.println("INCORRECTO");
             }
         } else {
-            System.out.println("INCORRECTO");
+            switch (dia) {
+                case 1:
+                    System.out.println("Lunes ");
+                    break;
+                case 2:
+                    System.out.println("Martes ");
+                    break;
+                case 3:
+                    System.out.println("Miercoles ");
+                    break;
+                case 4:
+                    System.out.println("Jueves ");
+                    break;
+                case 5:
+                    System.out.println("Viernes ");
+                    break;
+                case 6:
+                    System.out.println("Sabado ");
+                    break;
+                case 7:
+                    System.out.println("Domingo");
+                    break;
+                default:
+                System.out.println("INCORRECTO");
+            }
         }
     
     }
@@ -168,6 +191,6 @@ public class Actividad2_66187 {
         ejer1();
         ejer2();   
         ejer3();
-        ejer4();
+        ejer4(3,false);
     }
 }
